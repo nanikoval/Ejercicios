@@ -6,7 +6,7 @@ public class Reloj {
     }
 
     public String getHoraAmPm(){
-        if (horas>12) return (24-horas)+":"+minutos.toString()+" pm";
+        if (horas>12) return (horas-12)+":"+minutos.toString()+" pm";
         else return horas.toString()+minutos.toString()+"am";
     }
 
