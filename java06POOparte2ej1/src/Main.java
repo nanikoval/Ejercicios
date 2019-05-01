@@ -7,6 +7,6 @@ public class Main {
         reloj.setSegundos(59);
 
         System.out.println(reloj.getHoraActual());
-        System.out.println(reloj.getHora24hs());
+        System.out.println(reloj.getHoraAmPm());
     }
 }
