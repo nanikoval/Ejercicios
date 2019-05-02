@@ -6,6 +6,10 @@ public class Main {
         Iphone celIphone2 = new Iphone();
         Iphone celIphone3 = new Iphone();
 
+        Claro claro = new Claro();
+        Movistar movistar = new Movistar();
+        Personal personal = new Personal();
+
         System.out.println(celSamsung.getBateria());
         System.out.println(celIphone.getBateria());
         System.out.println(celIphone2.getBateria());
@@ -51,15 +55,14 @@ public class Main {
         System.out.println(juan.celularApagado());
         System.out.println(ernesto.celularApagado());
 
-        juliana.setCompania("personal");
-        juliana.llamarA(1);
+        juliana.setCompania(personal);
+        catalina.setCompania(movistar);
 
-        catalina.setCompania("movistar");
-        catalina.llamarA(2);
+        personal.setNombre("Personal");
+        movistar.setNombre("Movistar");
+        System.out.println(juliana.getCompania().getNombre());
+        System.out.println(catalina.getCompania().getNombre());
 
-        System.out.println(juliana.getGasto());
-        System.out.println(catalina.getGasto());
-        System.out.println(juan.getGasto());
-        System.out.println(ernesto.getGasto());
+
     }
 }
