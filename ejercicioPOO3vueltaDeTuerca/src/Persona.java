@@ -18,5 +18,9 @@ public class Persona {
         return compania;
     }
 
+    //PENDIENTE
 
+    public double llamaA(Persona persona){
+        return this.compania.llamarA(1);
+    }
 }

@@ -60,9 +60,14 @@ public class Main {
 
         personal.setNombre("Personal");
         movistar.setNombre("Movistar");
+
         System.out.println(juliana.getCompania().getNombre());
         System.out.println(catalina.getCompania().getNombre());
 
+        //PENDIENTE
+
+
+        System.out.println(juliana.llamaA(catalina));
 
     }
 }
