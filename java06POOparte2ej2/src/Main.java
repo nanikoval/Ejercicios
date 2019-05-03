@@ -14,10 +14,10 @@ public class Main {
         System.out.println("Ejemplares disponibles: "+(libro.getEjemplaresTotal()-libro.getEjemplaresPrestaados()));
 
         System.out.println("***********************************");
-        libro.prestarLibro(1);
+        libro.prestarLibro();
         System.out.println("Ejemplares prestados: "+libro.getEjemplaresPrestaados());
 
-        libro.devolverLibro(1);
+        libro.devolverLibro();
         System.out.println("Ejemplares prestados: "+libro.getEjemplaresPrestaados());
     }
 }

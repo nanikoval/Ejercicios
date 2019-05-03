@@ -35,10 +35,10 @@ public class Libro {
         this.ejemplaresPrestaados = ejemplaresPrestaados;
     }
 
-    public Integer prestarLibro(Integer cantidad){
+    public Integer prestarLibro(){
         return ejemplaresPrestaados++;
     }
-    public Integer devolverLibro(Integer cantidad){
+    public Integer devolverLibro(){
         return ejemplaresPrestaados--;
     }
 }
