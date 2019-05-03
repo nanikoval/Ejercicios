@@ -9,6 +9,6 @@ public class Claro implements Telefonia {
     }
 
     public double llamarA(double minutos) {
-        return (0.5*1*1.21);
+        return (0.5*1.21);
     }
 }

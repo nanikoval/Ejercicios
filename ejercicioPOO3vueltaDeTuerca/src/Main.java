@@ -64,10 +64,12 @@ public class Main {
         System.out.println(juliana.getCompania().getNombre());
         System.out.println(catalina.getCompania().getNombre());
 
-        //PENDIENTE
-
+        //GASTO
 
         juliana.llamaA(catalina);
         System.out.println(juliana.getGasto());
+
+        catalina.llamaA(juliana);
+        System.out.println(catalina.getGasto());
     }
 }

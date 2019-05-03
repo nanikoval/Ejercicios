@@ -24,7 +24,7 @@ public class Persona {
         return compania;
     }
 
-    //PENDIENTE
+    //GASTO
 
     public void llamaA(Persona persona){
         gasto=gasto+this.compania.llamarA(1);
