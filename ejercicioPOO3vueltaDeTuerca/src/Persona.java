@@ -1,4 +1,10 @@
 public class Persona {
+    private double gasto;
+
+    public double getGasto() {
+        return this.gasto;
+    }
+
     private Celular celular;
     private Telefonia compania;
 
@@ -20,7 +26,7 @@ public class Persona {
 
     //PENDIENTE
 
-    public double llamaA(Persona persona){
-        return this.compania.llamarA(1);
+    public void llamaA(Persona persona){
+        gasto=gasto+this.compania.llamarA(1);
     }
 }

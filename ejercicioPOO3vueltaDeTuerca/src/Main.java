@@ -67,7 +67,7 @@ public class Main {
         //PENDIENTE
 
 
-        System.out.println(juliana.llamaA(catalina));
-
+        juliana.llamaA(catalina);
+        System.out.println(juliana.getGasto());
     }
 }
