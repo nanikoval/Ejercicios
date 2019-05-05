@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args){
-        Libro libro = new Libro();
+        Libro libro = new Libro("Poesia","Borges",50,30);
 
         libro.setTitulo("Poesia completa");
         libro.setAutor("Borges");

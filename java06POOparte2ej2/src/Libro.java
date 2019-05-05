@@ -2,6 +2,12 @@ public class Libro {
     private String titulo, autor;
     private Integer ejemplaresTotal, ejemplaresPrestaados;
 
+    public Libro(String titulo, String autor, Integer ejemplaresTotal, Integer ejemplaresPrestaados){
+        this.titulo=titulo;
+        this.autor=autor;
+        this.ejemplaresTotal=ejemplaresTotal;
+        this.ejemplaresPrestaados=ejemplaresPrestaados;
+    }
 
     public String getTitulo() {
         return titulo;
