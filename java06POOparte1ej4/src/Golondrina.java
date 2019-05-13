@@ -1,3 +1,5 @@
+import com.sun.xml.internal.fastinfoset.algorithm.IntEncodingAlgorithm;
+
 public class Golondrina implements Ave {
     private Integer energia=100;
     private String nombre;
@@ -11,17 +13,17 @@ public class Golondrina implements Ave {
     public Integer costoFijo=-10;
 
     public void setEnergia(Integer joules){
-        energia=joules;
+        this.energia=joules;
     }
     public Integer getEnergia(){
         return energia;
     }
 
     public void volar(Integer kilometros){
-        energia=energia-kilometros+costoFijo;
+        this.energia=this.energia-kilometros+costoFijo;
     }
     public void comer(Integer gramos){
-        energia=energia+gramos*4;
+        this.energia=this.energia+gramos*4;
     }
 
 
@@ -36,6 +38,10 @@ public class Golondrina implements Ave {
     public Lugar volarA(Lugar destino){
         if (energia>0) return ubicacion=destino;
         else return ubicacion;
+    }
+    public void hacerDeseo(){
+        if(energia<50)comer(500);
+        if(energia>500&&energia%2==0)volar(5);
     }
 
 }

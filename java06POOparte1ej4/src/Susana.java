@@ -1,6 +1,7 @@
 public class Susana {
 
-    public void entrenate(Ave ave){
+    public void entrena(Ave ave){
         ave.volar(3);
+        ave.hacerDeseo();
     }
 }

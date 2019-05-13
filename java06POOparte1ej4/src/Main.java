@@ -36,14 +36,27 @@ public class Main {
 
         pepita.setEnergia(500);
         Susana susana = new Susana();
-        susana.entrenate(pepita);
+        susana.entrena(pepita);
         System.out.println("Energia de Pepita despues de entrenarse: "+pepita.getEnergia());
 
         Gorrion pepon = new Gorrion();
-        pepon.setEnergia(500);
+        pepon.setEnergia(1000);
         Roque roque = new Roque();
-        roque.entrenate(pepon);
-        System.out.println("Energia de Pepita despues de entrenarse: "+pepon.getEnergia());
+        roque.entrena(pepon);
+        System.out.println("Energia de Pepon despues de entrenarse: "+pepon.getEnergia());
+
+        Golondrina jonasa = new Golondrina("Jonasa",400);
+        Golondrina ernestina = new Golondrina("Ernestina", 500);
+        susana.entrena(ernestina);
+        System.out.println("Energia de Ernestina luego de entrenarse con Susana: "+ernestina.getEnergia());
+
+        System.out.println("********************************************************");
+
+        pepita.setEnergia(600);
+        System.out.println("Energia de Pepita: "+pepita.getEnergia());
+        pepita.hacerDeseo();
+        System.out.println("Energia de Pepita luego de hacer su deseo: "+pepita.getEnergia());
+
     }
 
 }
