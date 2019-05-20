@@ -24,4 +24,8 @@ public class Mascota {
     public void jugar(){
         this.getEstado().jugar(this);
     }
+
+    public Boolean podesJugar(){
+        return this.estado.podesJugar();
+    }
 }

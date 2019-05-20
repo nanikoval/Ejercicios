@@ -6,4 +6,7 @@ public class Contenta implements Estado {
     public void comer(Mascota mascota){
         mascota.setEstado(new Aburrida());
     }
+    public Boolean podesJugar(){
+        return true;
+    }
   }

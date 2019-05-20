@@ -14,5 +14,11 @@ public class Main {
         tamagotchi.jugar();
         System.out.println("Nivel despues de haber jugado estando contenta: "+tamagotchi.getNivel());
 
+        System.out.println("Estado despues de jugar estando contenta: "+tamagotchi.getEstado());
+        System.out.println("Puede jugar hambrienta: "+tamagotchi.podesJugar());
+
+        tamagotchi.setEstado(new Contenta());
+        System.out.println("Puede jugar contenta: "+tamagotchi.podesJugar());
+
     }
 }
