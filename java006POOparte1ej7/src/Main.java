@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -39,7 +38,7 @@ public class Main {
         System.out.println("****************************");
 
         //una venta del 21 de mayo:
-        Ventas venta01 = new Ventas("pantalon", 1500.0, 2, "21/05/19");
+        Venta venta01 = new Venta("pantalon", 1500.0, 2, "21/05/19");
         System.out.println("Prenda vendida: "+venta01.getNombre());
         System.out.println("Precio de la prenda vendida: "+venta01.getPrecio());
         System.out.println("Cantidad vendida: "+venta01.getCantidad());
@@ -48,16 +47,13 @@ public class Main {
         System.out.println("****************************");
 
         //listado de prendas vendidas el 21 de mayo:
-        Ventas arrayVentas[]=new Ventas[5];
-        arrayVentas[0]=new Ventas("camisa",1300.0,3,"21/05/19");
-        arrayVentas[1]=new Ventas("saco",1450.0,2,"21/05/19");
-        arrayVentas[2]=new Ventas("pantalon",1700.0,1,"21/05/19");
-        arrayVentas[3]=new Ventas("saco",2000.0,4,"21/05/19");
-        arrayVentas[4]=new Ventas("camisa",1100.0,1,"21/05/19");
+        Venta arrayVentas[]=new Venta[5];
+        arrayVentas[0]=new Venta("camisa",1300.0,3,"21/05/19");
+        arrayVentas[1]=new Venta("saco",1450.0,2,"21/05/19");
+        arrayVentas[2]=new Venta("pantalon",1700.0,1,"21/05/19");
+        arrayVentas[3]=new Venta("saco",2000.0,4,"21/05/19");
+        arrayVentas[4]=new Venta("camisa",1100.0,1,"21/05/19");
 
-        for(Ventas ventas:arrayVentas){
-            System.out.println(ventas.getCantidad());
-        }
 
     }
 }
