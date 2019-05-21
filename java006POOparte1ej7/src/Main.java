@@ -54,13 +54,12 @@ public class Main {
         arrayVentas[3]=new Venta("saco",2000.0,4,"21/05/19");
         arrayVentas[4]=new Venta("camisa",1100.0,1,"21/05/19");
 
-        Integer cantidadTotal = 0;
 
+        //sumando elementos del array:
+        Integer cantidadTotal = 0;
         for(Venta venta : arrayVentas) {
             cantidadTotal += venta.getCantidad();
         }
-
         System.out.println("Cantidad total vendida: "+cantidadTotal);
-
     }
 }
