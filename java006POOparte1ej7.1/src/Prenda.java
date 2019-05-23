@@ -2,28 +2,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Prenda {
-    private tipoDePrenda tipo=new Pantalon();
+
     private String nombre;
-    private Double precio;
+    private Integer cantidad;
+    private String fecha;
     private Double precioFijo=550.0;
-
-    //constructor:
-    public Prenda (String nombre){
-        this.nombre=nombre;
-    }
-
 
     public String getNombre() {
         return nombre;
     }
 
-    public tipoDePrenda getTipo() {
-        return tipo;
+    public Prenda(String nombre, Integer cantidad, String fecha){
+        this.nombre=nombre;
+        this.cantidad=cantidad;
+        this.fecha=fecha;
     }
 
     //calculo el precio final de cada prenda:
     public Double precioFinal(){
-        return (precioFijo+this.getTipo().precioBase())*1.3;
+        return precioFijo;
     }
 
 
