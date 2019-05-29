@@ -10,9 +10,9 @@ public class Temporada {
         this.cantidadCapitulos = cantidadCapitulos;
     }
 
-    public void capitulos() {
+    public void capitulosVistos() {
         List<Capitulo> capitulos = new ArrayList<>();
-        capitulos.add(new Capitulo("Actor 1", 40.0));
-        capitulos.add(new Capitulo("Actor 2", 42.0));
+        capitulos.add(new Capitulo(1,"Actor 5", 40.0));
+        capitulos.add(new Capitulo(2,"Actor 7", 42.0));
     }
 }
