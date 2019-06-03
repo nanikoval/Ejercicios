@@ -1,6 +1,9 @@
+import java.util.List;
+
 public interface Contenido {
-    void peliculasVistas();
-    void seriesVistas();
-    void temporadasVistas();
-    void capitulosVistos();
+    Integer cuantoDura();
+    Boolean estaVistoCompletoPor(Usuario usuario);
+    String getGenero();
+    Boolean actua(Actor actor);
+    List<Actor> getActores();
 }
