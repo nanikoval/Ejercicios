@@ -58,6 +58,13 @@ public class Formacion {
         return vagones.stream().max(Comparator.comparing(vagon -> vagon.getPeso())).get();
     }
 
+    public Integer formacionPesoTotal(){
+        return locomotora.pesoTotal();
+    }
+
+
+
+
 
 
 }

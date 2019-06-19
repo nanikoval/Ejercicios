@@ -36,6 +36,9 @@ public class Locomotora {
         return vagon.pesoMaximo();
     }
 
+    public Integer pesoTotal(){
+        return this.getPeso()+pesoMaximoVagones();
+    }
 
 
     }
